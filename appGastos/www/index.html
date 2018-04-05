@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>APP GASTOS</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">
+                            <p class="text-center">APP GASTOS</p>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <p>Por favor, ingresá los siguientes datos para seguir.</p>
+        <form>
+            <div class="form-group">
+                <label class="">Sueldo</label>
+                <input id="sueldoIngresado" type="number" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label>Billetera</label>
+                <input id="billeteraIngresado" type="number" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label>Banco</label>
+                <input id="bancoIngresado" type="number" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <button class="btn btn-default" type="submit" onclick="CalcularSaldoInicial();"><a href="pages/principal.html">Cargar</a></button>
+            </div>
+        </form>
+    </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

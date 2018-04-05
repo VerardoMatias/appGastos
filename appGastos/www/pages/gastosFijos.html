@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>APP GASTOS</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/index.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">
+                        <p class="text-center">APP GASTOS</p>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Tarjeta</th>
+                            <th>Gasto</th>
+                            <th>Monto</th>
+                            <th>Cuota</th>
+                        </tr>
+                    </thead>
+                    <tbody id="mostrarLista">
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="panel-footer">
+                <p class="text-right" id="mostrarTotalLista"></p>
+            </div>
+        </div>
+
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Cargar Fijo</button>
+
+        <div id="demo"></div>
+        <!-- Modal -->
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Gasto Fijo</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label>Tarjeta</label>
+                                <input id="tarjetaFijo" type="text" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Gasto</label>
+                                <input id="nombreGastoFijo" type="text" class="form-control">
+                            </div>
+
+
+                            <div class="form-group">
+                                <label class="">Monto</label>
+                                <input id="montoFijo" type="number" class="form-control" placeholder="">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="">Cuota</label>
+                                <input id="cuotaFijo" type="text" class="form-control" placeholder="">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" onclick="CargarFijo();">Cargar Fijo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <ul class="nav nav-tabs col-md-12">
+            <li role="presentation" class="col-md-4">
+                <a href="principal.html">Cargar</a>
+            </li>
+            <li role="presentation" class="active col-md-4">
+                <a href="#">Fijos</a>
+            </li>
+            <li role="presentation" class="col-md-4">
+                <a href="divisor.html">Divisor</a>
+            </li>
+        </ul>
+    </footer>
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/index.js"></script>
+</body>
+
+</html>
